@@ -1,0 +1,76 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    .icon{
+        margin: 0px 7px;
+    }
+    .input_class{
+        color: black;
+        font-weight: bolder;
+        width: 250px;
+    }
+}
+
+
+body {
+    background-color: rgb(10, 63, 70);
+    overflow-y: hidden;
+}
+
+/* REUSABLE CLASS */
+
+.mp{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px black;
+    background-color: rgb(74, 3, 116);
+    border-radius: 10px;
+    height: 25em;
+    width: 25em;
+}
+
+/* Inside Wrapper */
+
+.form-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 50px 0px;
+
+    .fa-circle-user{
+        position: relative;
+        margin: 5px 0px 40px 0px;
+    }
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .input-field{
+        margin:  10px 0px;
+        font-weight: bolder;
+        color: black
+        
+        
+    }
+
+}
