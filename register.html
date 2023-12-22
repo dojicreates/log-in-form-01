@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="register.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -14,11 +14,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<body class="mp ">
+<body class="mp">
   <div class="container">
     <div class="wrapper animate__animated animate__flipInY">
       <div class="form-box">
-        <h1 class="h1_su">Sign In</h1>
+        <h1 class="h1_su">Sign Up</h1>
         <i class="fa-solid icon fa-circle-user fa-2xl"></i>
       </div>
       <form action="" id="myFrom">
@@ -27,25 +27,21 @@
             <i class="fa-solid icon fa-user fa-sm"></i>
             <input type="text" class="input_class" placeholder="username" id="username" required>
           </div>
-          <!-- <div class="input-field input-style email">
+          <div class="input-field input-style password">
             <i class="fa-solid icon fa-at fa-sm"></i>
-            <input type="email" class="input_class" placeholder="email" id="email" required>
-          </div> -->
+            <input type="email" class="input_class" id="email" placeholder="email"  required>
+          </div>
           <div class="input-field input-style password">
             <i class="fa-solid icon fa-lock fa-sm"></i>
-            <input type="password" class="input_class" placeholder="password" id="" required>
+            <input type="password" class="input_class" placeholder="password" id="password" pattern="^\S{3,}$" title="Password must be at least 8 characters and should not contain spaces" required>
           </div>
           <div class="btn-container">
-            <button type="submit" class="input-field" id="signin">Sign In</button>
-            <a href="register.html" type="submit" class="input-field" id="register">Register</a>
+            <button type="submit" class="input-field" id="signin">Confirm</button>
+            <a href="index.html" class="input-field" id="register">Already have an account</a>
           </div>
         </div>
       </form>
     </div>
-  </div>
-  <div class="popup-container" id="popup">
-    <p id="popupMessage"></p>
-    <button onclick="closePopup()">Close</button>
   </div>
   <script src="script.js"></script>
 </body>
